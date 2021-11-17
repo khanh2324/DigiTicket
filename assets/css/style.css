@@ -105,6 +105,7 @@
     /* line-height: 56px; */
     background-color: #fffbd2;
     margin-top: var(--navSearch-height);
+    z-index: 1;
 }
 
 .header-option_navbar{
@@ -135,6 +136,81 @@
 .header-option_link i{
     font-size: 1.1rem;
 }
+
+/* Header-navbar */
+
+.header-navbar_btn{
+    border: none;
+    background-color: transparent;
+}
+
+.header-navbar_icon{
+    font-size: 2.4rem;
+}
+
+.header-navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fffbd2;
+    overflow-y: auto;
+    transition: ease 0.7s;
+    z-index: 1111;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.header-navbar_container::-webkit-scrollbar { 
+    display: none; 
+}
+
+.header-navbar_list{
+    list-style: none;
+    padding-left: 0;
+}
+
+.header-navbar_item{
+    border-bottom: 1px solid #e2e491;
+}
+
+.header-navbar_link{
+    display: block;
+    padding: 13px 40px;
+    font-size: 1.6rem;
+    color: var(--black-color);
+    font-weight: 500;
+    transition: 0.2s;
+    user-select: none;
+}
+
+.header-navbar_search-wrap{
+    padding: 20px 40px;
+    position: relative;
+}
+
+.header-navbar_search-input{
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 1.5rem;
+    border: 1px solid var(--primary-color);
+    outline: none;
+    border-radius: 8px;
+}
+
+.header-navbar_search-btn{
+    position: absolute;
+    font-size: 16px;
+    border: none;
+    background-color: var(--white-color);
+    top: 22px;
+    right: 48px;
+    padding: 10px;
+    color: var(--text-color);
+    cursor: pointer;
+    user-select: none;
+}
+
+
 
 /* Sub nav */
 
@@ -298,6 +374,7 @@
 .slider-introduce_wrap{
     border-radius: 8px;
     overflow: hidden;
+    margin: 12px 0;
 }
 
 .slider-introduce_img{
@@ -370,6 +447,15 @@
     margin-top: 18px;
     transition: 0.2s ease;
 }
+
+/* .tab__content .tab-pane.show {
+    transform: translateY(0);
+    position: relative;
+    width: auto;
+    top: 0;
+    opacity: 1;
+    visibility: visible; 
+}*/
 
 .product-hot_item{
     display: block;
@@ -507,6 +593,7 @@ footer {
 
 .footer-heading_logo{
     margin: 0 28px 26px 0;
+    max-width: 210px;
 }
 
 .footer-content_wrap{

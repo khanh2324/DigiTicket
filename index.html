@@ -37,7 +37,7 @@
                     </a>
                 </div>
                 
-                <div class="col-lg-10 d-flex header-wrap">
+                <div class="col-lg-10 d-lg-flex header-wrap d-none">
                     <div class="header-search d-flex">
                         <input  class="header-search_input" type="text" placeholder="Tìm kiếm trên Digiticket">
                         <i class="header-search_icon bi bi-search" role="button" typeof="submit"></i>
@@ -64,6 +64,34 @@
                         </div>
 
                         <span>Giỏ hàng</span>
+                    </div>
+                </div>
+                <!-- Button navbar and menu navbar -->
+                <button type="button" class="navbar-toggle header-navbar_btn d-lg-none d-block" data-toggle="collapse" data-target="#menuNavbar">
+                    <i class="header-navbar_icon fas fa-bars"></i>
+                </button>
+                <div class="header-navbar d-lg-none navbar-collapse collapse" id="menuNavbar">
+                    <div class="header-navbar_container d-lg-none">
+                        <ul class="header-navbar_list">
+                            <li class="header-navbar_item">
+                                <a href="" class="header-navbar_link">Trang Chủ</a>
+                            </li>
+                            <li class="header-navbar_item">
+                                <a href="" class="header-navbar_link">Đăng Ký</a>
+                            </li>
+                            <li class="header-navbar_item">
+                                <a href="" class="header-navbar_link">Đăng Nhập</a>
+                            </li>
+                        </ul>
+    
+                        <div class="header-navbar_search">
+                            <form action="" class="header-navbar_search-wrap">
+                                <input type="text" placeholder="Search" class="header-navbar_search-input">
+                                <button class="header-navbar_search-btn">
+                                    <i class="header-search_icon bi bi-search" role="button" typeof="submit"></i>
+                                </button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -236,7 +264,7 @@
                     </div>
                 </div>
 
-                <div class="row slider-introduce">
+                <div class="row slider-introduce d-flex flex-wrap">
                     <div class="col-lg-4">
                         <div class="slider-introduce_wrap">
                             <img src="./assets/img/logo-slider/introduce1.jpg" alt="" class="slider-introduce_img">
@@ -283,7 +311,7 @@
                     <div class="tab-content">
                         <!-- Hotel -->
                         <div id="hotel" class="tab-pane active">
-                            <div class="d-flex flex-wrap justify-content-between product-hot_content">
+                            <div class="d-flex flex-wrap justify-content-start product-hot_content">
                                 <div class="product-hot_item col-lg-2 col-md-3 col-sm-4 col-6">
                                     <a href="" class="product-hot_item-wrap">
                                         <div class="product-hot_item-img">
@@ -390,7 +418,7 @@
                         
                         <!-- Food -->
                         <div id="food" class="tab-pane">
-                            <div class="d-flex flex-wrap justify-content-between product-hot_content">
+                            <div class="d-flex flex-wrap justify-content-start product-hot_content">
                                 <div class="product-hot_item col-lg-2 col-md-3 col-sm-4 col-6">
                                     <a href="" class="product-hot_item-wrap">
                                         <div class="product-hot_item-img">
@@ -497,7 +525,7 @@
                         
                         <!-- Drinks -->
                         <div id="drinks" class="tab-pane">
-                            <div class="d-flex flex-wrap justify-content-between product-hot_content">
+                            <div class="d-flex flex-wrap justify-content-start product-hot_content">
                                 <div class="product-hot_item col-lg-2 col-md-3 col-sm-4 col-6">
                                     <a href="" class="product-hot_item-wrap">
                                         <div class="product-hot_item-img">
