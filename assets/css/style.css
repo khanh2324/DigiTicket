@@ -99,43 +99,6 @@
     font-weight: 700;
     font-size: 1.2rem;
 }
-/* header options */
-.header-option{
-    height: 28px;
-    /* line-height: 56px; */
-    background-color: #fffbd2;
-    margin-top: var(--navSearch-height);
-    z-index: 1;
-}
-
-.header-option_navbar{
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: var(--black-color);
-    letter-spacing: -0.2px;
-}
-
-.header-option_link{
-    color: var(--black-color);
-    font-size: 1.4rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 8px;
-    line-height: 28px;
-    font-weight: 400;
-    width: 160px;
-    position: relative;
-}
-
-.header-option_link:hover{
-    background-color: var(--primary-color);
-}
-
-.header-option_link i{
-    font-size: 1.1rem;
-}
 
 /* Header-navbar */
 
@@ -210,19 +173,69 @@
     user-select: none;
 }
 
+/* Header options */
+.header-option{
+    height: 28px;
+    /* line-height: 56px; */
+    background-color: #fffbd2;
+    margin-top: var(--navSearch-height);
+    z-index: 1;
+}
 
+.header-option_navbar{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--black-color);
+    letter-spacing: -0.2px;
+    display: block;
+    margin-top: 4px;
+}
+
+.header-option_list{
+    left: -2px !important;
+}
+
+.header-option_link{
+    color: var(--black-color);
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px;
+    line-height: 28px;
+    font-weight: 400;
+    width: 160px;
+}
+
+.header-option_subfather{
+    position: relative;
+}
+
+.header-option_subfather:hover{
+    background-color: var(--primary-color);
+}
+
+.header-option_link i{
+    font-size: 1.1rem;
+}
 
 /* Sub nav */
 
+.header-option_list .header-option_subfather:hover .sub-menu{
+    display: block;
+}
+
 .sub-menu{
     position: absolute;
-    top: 34px;
+    top: 0;
     left: 100%;
     right: auto;
     text-align: inherit;
     min-width: 158px;
     padding-left: 0;
-    box-shadow: 0 0 5px rgba(0,0,0, 0.7) ;
+    background-color: var(--white-color);
+    box-shadow: 0 0 3px rgba(0,0,0, 0.3) ;
     display: none;
 }
 
