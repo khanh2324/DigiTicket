@@ -92,6 +92,12 @@
     line-height: 1.6rem;
     padding: 4px 0 0;
   }
+
+  .form-forgot_password{
+    text-align: right;
+    display: block;
+    font-size: 14px;
+  }
   
   .form-submit {
     outline: none;
@@ -109,6 +115,18 @@
   
   .form-submit:hover {
     background-color: #ffcb3e;
+  }
+
+  .form-btn_convert{
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 16px;
+    display: block;
+  }
+
+  .form-forgot_password:hover,
+  .form-btn_convert:hover{
+    text-decoration: revert;
   }
   
   .spacer {
