@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <!--Font Awesome --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Bootrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/shared.css">
+
+    <link rel="stylesheet" href="./css/style-order.css">
+    <link rel="stylesheet" href="./css/lightbox.min.css">
+</head>
+<body>
+    <div class="root">
+        <nav class="nav-search navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container ">
+                
+                <div class="cd-lg-2 header-logo">
+                    <a class="header-logo_link" href="#">
+                        <img class="header-logo_img" src="../assets/img/Logo-main/Digiticket.png" alt="">
+                    </a>
+                </div>
+                
+                <div class="col-lg-10 d-lg-flex header-wrap d-none">
+                    <div class="header-search d-flex">
+                        <input  class="header-search_input" type="text" placeholder="Tìm kiếm trên Digiticket">
+                        <i class="header-search_icon bi bi-search" role="button" typeof="submit"></i>
+                    </div>
+
+                    <div class="header-user d-flex">
+                        <div class="header-user_avatar">
+                            <i class="header-user_avatar-icon fas fa-user-circle"></i>
+                        </div>
+                        <div class="header-user_account">
+                            <div class="header-user_account-heading">Tài khoản</div>
+                            <div class="header-user_account-wrap d-flex">
+                                <a href="../Resgister/register.html" class="header-user_account-name">Đăng ký</a>
+                                <span>/</span>
+                                <a href="../Resgister/login.html" class="header-user_account-name">Đăng nhập</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header-cart">
+                        <div class="header-cart-wrap">
+                            <i class="header-cart-icon bi bi-cart2"></i>
+                            <span class="header-cart-notice">0</span>
+                        </div>
+
+                        <span>Giỏ hàng</span>
+                    </div>
+                </div>
+                <!-- Button navbar and menu navbar -->
+                <button type="button" class="navbar-toggle header-navbar_btn d-lg-none d-block" data-toggle="collapse" data-target="#menuNavbar">
+                    <i class="header-navbar_icon fas fa-bars"></i>
+                </button>
+                <div class="header-navbar d-lg-none navbar-collapse collapse" id="menuNavbar">
+                    <div class="header-navbar_container d-lg-none">
+                        <ul class="header-navbar_list">
+                            <li class="header-navbar_item">
+                                <a href="" class="header-navbar_link">Trang Chủ</a>
+                            </li>
+                            <li class="header-navbar_item">
+                                <a href="" class="header-navbar_link">Đăng Ký</a>
+                            </li>
+                            <li class="header-navbar_item">
+                                <a href="" class="header-navbar_link">Đăng Nhập</a>
+                            </li>
+                        </ul>
+    
+                        <div class="header-navbar_search">
+                            <form action="" class="header-navbar_search-wrap">
+                                <input type="text" placeholder="Search" class="header-navbar_search-input">
+                                <button class="header-navbar_search-btn">
+                                    <i class="header-search_icon bi bi-search" role="button" typeof="submit"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- end nav -->
+        <!-- Header Options -->
+        <div class="header-option fixed-top">
+            <div class="container d-flex justify-content-between">
+                <div class="dropdown">
+                    <a class="header-option_navbar dropdown-toggle" data-toggle="dropdown" href=""  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <i class="fas fa-bars"></i> DANH MỤC DỊCH VỤ
+                    </a>
+                    <div class="dropdown-menu header-option_list">
+                        <div class="dropdown-item header-option_subfather">
+                            <a class="header-option_link"  href="#" role="button">
+                                <span>Tham quan</span>
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu_item">
+                                    <a class="sub-menu_link" href="">Địa điểm tham quan</a>
+                                </li>
+                                <li class="sub-menu_item">
+                                    <a class="sub-menu_link" href="">Tour</a>
+                                </li>
+                            </ul>   
+                        </div>
+                        <div class="dropdown-item header-option_subfather">
+                            <a class="header-option_link " href="#">
+                                <span>Nghệ thuật</span>
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu_item">
+                                    <a class="sub-menu_link" href="">Show Ca Nhạc</a>
+                                </li>
+                                <li class="sub-menu_item">
+                                    <a class="sub-menu_link" href="">Sân khấu nghệ thuật</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-item header-option_subfather">
+                            <a class="header-option_link" href="#">
+                                <span>Thể thao</span>
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu_item">
+                                    <a class="sub-menu_link" href="">Bóng đá</a>
+                                </li>
+                                <li class="sub-menu_item">
+                                    <a class="sub-menu_link" href="">Bóng chuyền</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-item header-option_subfather">
+                            <a class="header-option_link" href="#">
+                                <span>Di chuyển</span>
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu_item">
+                                    <a class="sub-menu_link" href="">Máy bay</a>
+                                </li>
+                                <li class="sub-menu_item">
+                                    <a class="sub-menu_link" href="">Ô tô</a>
+                                </li>
+                                <li class="sub-menu_item">
+                                    <a class="sub-menu_link" href="">Tàu thuỷ</a>
+                                </li>
+                                <li class="sub-menu_item">
+                                    <a class="sub-menu_link" href="">Tàu hoả</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-item header-option_subfather">
+                            <a class="header-option_link" href="#">
+                                <span>Combo</span>
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu_item">
+                                    <a class="sub-menu_link" href="">Combo du lịch</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-item header-option_subfather">
+                            <a class="header-option_link" href="#">
+                                <span>Ẩm thực</span>
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu_item">
+                                    <a class="sub-menu_link" href="">Đồ ăn</a>
+                                </li>
+                                <li class="sub-menu_item">
+                                    <a class="sub-menu_link" href="">Đồ uống</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="header-option_wrap d-flex justify-content-between">
+                    <a href="" class="header-option_hotline d-flex">
+                        <i class="bi bi-telephone-outbound"></i>
+                        <span>1900303080</span>
+                    </a>
+
+                    <a href="" class="header-option_check"  data-toggle="dropdown">
+                        <span>Kiểm tra đơn hàng</span>
+                    </a>
+                    <div class="dropdown-menu order-check_wrap">
+                        <form class="form-check" action="">
+                            <div class="form-check_header">Kiểm tra đơn hàng</div>
+                            <div class="form-check_wrap invalid">
+                                <label for="phone" class="form-check_label">Vui lòng nhập số điện thoại</label>
+                                <input id="phone" name="phone" type="text" placeholder="Số điện thoại" class="form-check_control">
+                                <span class="form-check_message"></span>
+                            </div>
+                            <div class="form-check_wrap invalid">
+                                <label for="email" class="form-check_label">Vui lòng nhập Email</label>
+                                <input id="email" name="email" type="text" placeholder="VD: email@domain.com" class="form-check_control">
+                                <span class="form-check_message"></span>
+                            </div>
+                            <div class="form-check_wrap invalid">
+                                <label for="code" class="form-check_label">Vui lòng nhập Mã đơn hàng</label>
+                                <input id="code" name="phone" type="text" placeholder="VD: 123456" class="form-check_control">
+                                <span class="form-check_message"></span>
+                            </div>
+
+                            <button class="form-check_submit">Kiểm tra</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container slider-gallery">
+            <div class="row">
+                <div class="slider-gallery_main col-lg-6">
+                    <a href="./img-order/ShowImage1.jpg" data-lightbox="sliderGallery" data-title="">
+                        <div class="slider-gallery_img" style="background-image: url('./img-order/ShowImage1.jpg');"></div>
+                    </a>
+                </div>
+    
+                <div class="slider-gallery_extra col-lg-6 d-flex flex-wrap">
+                    
+                    <div class="col-lg-4 slider-gallery_item">
+                        <a href="./img-order/ShowImage2.jpg" data-lightbox="sliderGallery" data-title="">
+                            <div class="slider-gallery_img" style="background-image: url('./img-order/ShowImage2.jpg');"></div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 slider-gallery_item">
+                        <a href="./img-order/ShowImage3.jpg" data-lightbox="sliderGallery" data-title="">
+                            <div class="slider-gallery_img" style="background-image: url('./img-order/ShowImage3.jpg');"></div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 slider-gallery_item">
+                        <a href="./img-order/ShowImage4.jpg" data-lightbox="sliderGallery" data-title="">
+                            <div class="slider-gallery_img" style="background-image: url('./img-order/ShowImage4.jpg');"></div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 slider-gallery_item">
+                        <a href="./img-order/ShowImage5.jpg" data-lightbox="sliderGallery" data-title="">
+                            <div class="slider-gallery_img" style="background-image: url('./img-order/ShowImage5.jpg');"></div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 slider-gallery_item">
+                        <a href="./img-order/ShowImage6.jpg" data-lightbox="sliderGallery" data-title="">
+                            <div class="slider-gallery_img" style="background-image: url('./img-order/ShowImage6.jpg');"></div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 slider-gallery_item">
+                        <a href="./img-order/ShowImage7.jpg" data-lightbox="sliderGallery" data-title="">
+                            <div class="slider-gallery_img" style="background-image: url('./img-order/ShowImage7.jpg');"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Content -->
+        <div class=" container container-content">
+            <div class="row">
+                <div class="col-md-8 p-lr-16">
+                    <!-- Nav content -->
+                    <nav aria-label="Breadcrumb" class="breadcrumb">
+                        <ul class="d-flex">
+                            <li><a href="">Trang Chủ</a></li>
+                            <li><a href="">Hà Nội</a></li>
+                            <li><a href="">Đồ ăn</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="content-header">
+                        <h1 class="content-heading">[E-voucher] Buffet nướng vị Hàn tại nhà hàng Box BBQ</h1>
+                        <div class="content-location">
+                            <i class="bi bi-geo-alt"></i>
+                            <span>Hà Nội - Việt Nam</span>
+                        </div>
+                    </div>
+
+                    <div class="content-characteristic_list d-flex flex-wrap">
+                        <div class="d-flex content-characteristic_item">
+                            <i class="content-characteristic_icon bi bi-arrow-clockwise"></i>
+                            <span>Không hoàn huỷ</span>
+                        </div>
+                        <div class="d-flex content-characteristic_item">
+                            <i class="content-characteristic_icon fas fa-coins"></i>
+                            <span>Voucher không có giá trị quy đổi thành tiền mặt</span>
+                        </div>
+                        <div class="d-flex content-characteristic_item">
+                            <i class="content-characteristic_icon bi bi-receipt-cutoff"></i>
+                            <span>Sử dụng nhiều voucher trên một hóa đơn</span>
+                        </div>
+                        <div class="d-flex content-characteristic_item">
+                            <i class="content-characteristic_icon fas fa-utensils"></i>
+                            <span>Dùng tại chỗ</span>
+                        </div>
+                    </div>
+
+                    <!-- Content Service -->
+                    <div class="content-service">
+                        <h2 class="content-service_header">Chọn Dịch vụ</h2>
+                        <h3 class="content-service_heading">Dịch vụ</h3>
+
+                        <!-- table -->
+                        <div class="content-service_table">
+                            <div class="content-service_table-header d-flex justify-content-between">
+                                <h4 id="table-title">Buffet nướng Hàn menu 260k - bữa tối</h4>
+                                <div class="expired-date">HSD: 31/01/2022</div>
+                            </div>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Lưu ý khi sử dụng</th>
+                                        <th scope="col">Giá dịch vụ</th>
+                                        <th scope="col">Số lượng</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="content-table-list">
+                                                <ul>
+                                                    <li>
+                                                        <i class="bi bi-check"></i>
+                                                        <span>Áp dụng từ 17h00 - 21h00 cả tuần trừ các ngày Lễ, Tết cho bàn từ 02 khách.</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="bi bi-check"></i>
+                                                        <span>Xem menu</span>
+                                                        <a href="" class="content-table-link">tại đây</a>
+                                                    </li>
+                                                    <li>
+                                                        <i class="bi bi-check"></i>
+                                                        <span>Địa chỉ áp dụng</span>
+                                                        <ul class="table-sublist">
+                                                            <li>Cơ sở 1: 37 Đỗ Quang, Quận Cầu Giấy, Hà Nội.</li>
+                                                            <li>Cơ sở 2: 14N7B Nguyễn Thị Thập, Quận Thanh Xuân, Hà Nội</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <a href="" class="table-link_detail">Xem chi tiết</a>
+                                        </td>
+                                        <td width="120">
+                                            <div class="table-price_old">260.000đ</div>
+                                            <div class="table-price_new">219.000đ</div>
+                                        </td>
+                                        <td width="120">
+                                            <div class="table-quanity d-flex">
+                                                <input class="table-quanity_minus cursor-pointer minus is-form" type="button" value="-">
+                                                <input aria-label="quantity" class="table-quanity_value input-qty" max="20" min="0" name="" type="number" value="0">
+                                                <input class="table-quanity_plus cursor-pointer plus is-form" type="button" value="+">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="content-service_table">
+                            <div class="content-service_table-header d-flex justify-content-between">
+                                <h4 id="table-title">Buffet nướng Hàn menu 260k - bữa trưa</h4>
+                                <div class="expired-date">HSD: 31/01/2022</div>
+                            </div>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Lưu ý khi sử dụng</th>
+                                        <th scope="col">Giá dịch vụ</th>
+                                        <th scope="col">Số lượng</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="content-table-list">
+                                                <ul>
+                                                    <li>
+                                                        <i class="bi bi-check"></i>
+                                                        <span>Áp dụng từ 17h00 - 21h00 cả tuần trừ các ngày Lễ, Tết cho bàn từ 02 khách.</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="bi bi-check"></i>
+                                                        <span>Xem menu</span>
+                                                        <a href="" class="content-table-link">tại đây</a>
+                                                    </li>
+                                                    <li>
+                                                        <i class="bi bi-check"></i>
+                                                        <span>Địa chỉ áp dụng</span>
+                                                        <ul class="table-sublist">
+                                                            <li>Cơ sở 1: 37 Đỗ Quang, Quận Cầu Giấy, Hà Nội.</li>
+                                                            <li>Cơ sở 2: 14N7B Nguyễn Thị Thập, Quận Thanh Xuân, Hà Nội</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <a href="" class="table-link_detail">Xem chi tiết</a>
+                                        </td>
+                                        <td width="120">
+                                            <div class="table-price_old">260.000đ</div>
+                                            <div class="table-price_new">199.000đ</div>
+                                        </td>
+                                        <td width="120">
+                                            <div class="table-quanity d-flex">
+                                                <input class="table-quanity_minus cursor-pointer minus is-form" type="button" value="-">
+                                                <input aria-label="quantity" class="table-quanity_value input-qty" max="20" min="0" name="" type="number" value="0">
+                                                <input class="table-quanity_plus cursor-pointer plus is-form" type="button" value="+">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 off-set-md-1">
+                    <div class="sticky-column order-information">
+                        <div class="order-information_header">
+                            <h4>Thông Tin Đặt Hàng</h4>
+                        </div>
+
+                        <div class="order-information_details">
+                            <div class="order-information_wrap d-flex justify-content-between">
+                                <div class="details-title">Loại dịch vụ</div>
+                                <div class="details-all">Tất cả</div>
+                            </div>
+                            <div class="order-information_wrap d-flex justify-content-between">
+                                <div class="details-title">Dịch vụ</div>
+                                <div class="details-list_content">
+                                    <!-- <div class="details-title text-right">Buffet nướng Hàn menu 260k - bữa trưa</div>
+                                    <div class="d-flex justify-content-end">
+                                        <div class="details-price"></div>
+                                        <div class="details-quantity"></div>
+                                    </div> -->
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="order-information_body">
+                            <div class="order-information_provisional d-flex justify-content-between">
+                                <span>Tạm tính</span>
+                                <div class="order-information_price">0đ</div>
+                            </div>
+
+                            <div class="order-information_btn d-flex justify-content-between">
+                                <div class="order-btn order-information_btn_add disabled">Thêm vào giỏ</div>
+                                <div class="order-btn order-information_put disabled">Đặt hàng</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container content-suggestion">
+            <div class="row">
+                <div class="suggestion">
+                    <div class="suggestion-header">
+                        <h2>Có thể bạn quan tâm</h2>
+                    </div>
+
+                    <div class="suggestion-list">
+                        <div class="d-flex flex-wrap justify-content-start product-hot_content">
+                            <div class="product-hot_item col-lg-2 col-md-3 col-sm-4 col-6">
+                                <a href="" class="product-hot_item-wrap">
+                                    <div class="product-hot_item-img">
+                                        <img src="../assets/img/product-food/Pizza.jpg" alt="">
+                                    </div>
+                                    <h4 class="product-hot_item-name">[FREESHIP] La Pizza</h4>
+                                    <div class="product-hot_item__price-new">39.000đ</div>
+                                    <div class="product-hot_item__price-ol d-flex invisible">
+                                        0
+                                        <p class="bg">
+                                            <span class="product-hot_item__price-percent badge invisible">0</span>
+                                        </p>
+                                    </div>
+                                    <div class="product-hot_item-location">Hà Nội</div>
+                                </a>
+                            </div>
+
+                            <div class="product-hot_item col-lg-2 col-md-3 col-sm-4 col-6">
+                                <a href="" class="product-hot_item-wrap">
+                                    <div class="product-hot_item-img">
+                                        <img src="../assets/img/product-food/Sashimi.jpg" alt="">
+                                    </div>
+                                    <h4 class="product-hot_item-name">[E-voucher] Buffet sashimi hải sản Nhật Bản cao cấp tại nhà hàng Tonchan</h4>
+                                    <div class="product-hot_item__price-new">279.000đ</div>
+                                    <div class="product-hot_item__price-ol d-flex">
+                                        480.000đ
+                                        <p class="bg">
+                                            <span class="product-hot_item__price-percent badge">-42%</span>
+                                        </p>
+                                    </div>
+                                    <div class="product-hot_item-location">Hà Nội</div>
+                                </a>
+                            </div>
+
+                            <div class="product-hot_item col-lg-2 col-md-3 col-sm-4 col-6">
+                                <a href="" class="product-hot_item-wrap">
+                                    <div class="product-hot_item-img">
+                                        <img src="../assets/img/product-food/lau-quan-sanh.jpg" alt="">
+                                    </div>
+                                    <h4 class="product-hot_item-name">[E-voucher] Set lẩu tại nhà hàng Quán Sành</h4>
+                                    <div class="product-hot_item__price-new">340.000đ</div>
+                                    <div class="product-hot_item__price-ol d-flex">
+                                        365.000đ
+                                        <p class="bg">
+                                            <span class="product-hot_item__price-percent badge">-7%</span>
+                                        </p>
+                                    </div>
+                                    <div class="product-hot_item-location">Hà Nội</div>
+                                </a>
+                            </div>
+
+                            <div class="product-hot_item col-lg-2 col-md-3 col-sm-4 col-6">
+                                <a href="" class="product-hot_item-wrap">
+                                    <div class="product-hot_item-img">
+                                        <img src="../assets/img/product-food/lau-thai-2-nguoi.jpg" alt="">
+                                    </div>
+                                    <h4 class="product-hot_item-name">[E-voucher] Set lẩu Thái 2 người tại Thai Street Food giảm 49%</h4>
+                                    <div class="product-hot_item__price-new">188.000đ</div>
+                                    <div class="product-hot_item__price-ol d-flex">
+                                        368.000đ
+                                        <p class="bg">
+                                            <span class="product-hot_item__price-percent badge">-49%</span>
+                                        </p>
+                                    </div>
+                                    <div class="product-hot_item-location">Hà Nội</div>
+                                </a>
+                            </div>
+
+                            <div class="product-hot_item col-lg-2 col-md-3 col-sm-4 col-6">
+                                <a href="" class="product-hot_item-wrap">
+                                    <div class="product-hot_item-img">
+                                        <img src="../assets/img/product-food/lau-nuong.jpg" alt="">
+                                    </div>
+                                    <h4 class="product-hot_item-name">[E-voucher] Buffet lẩu nướng giảm 50% tại Lẩu Nướng Safodi</h4>
+                                    <div class="product-hot_item__price-new">99.000đ</div>
+                                    <div class="product-hot_item__price-ol d-flex">
+                                        198.000đ
+                                        <p class="bg">
+                                            <span class="product-hot_item__price-percent badge">-50%</span>
+                                        </p>
+                                    </div>
+                                    <div class="product-hot_item-location">Hà Nội</div>
+                                </a>
+                            </div>
+
+                            <div class="product-hot_item col-lg-2 col-md-3 col-sm-4 col-6">
+                                <a href="" class="product-hot_item-wrap">
+                                    <div class="product-hot_item-img">
+                                        <img src="../assets/img/product-food/bun-tron-nam-bo.jpg" alt="">
+                                    </div>
+                                    <h4 class="product-hot_item-name">[FREESHIP] BUMTRO Bún Trộn Nam Bộ - Hồ Chí Minh</h4>
+                                    <div class="product-hot_item__price-new">35.000đ</div>
+                                    <div class="product-hot_item__price-ol d-flex">
+                                        65.000đ
+                                        <p class="bg">
+                                            <span class="product-hot_item__price-percent badge">-46%</span>
+                                        </p>
+                                    </div>
+                                    <div class="product-hot_item-location">Hồ Chí Minh</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="footer-heading_logo">
+                                    <img  class="footer-logo_img" src="../assets/img/Logo-main/Digiticket2.png" alt="">
+                                </div>
+
+                                <ul class="footer-content_wrap">
+                                    <li>
+                                        <a href="" class="d-flex footer-content">
+                                            <i class="footer-content_icon bi bi-envelope"></i>
+                                            <span>booking@digiticket.vn</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="d-flex footer-content">
+                                            <i class="footer-content_icon bi bi-telephone-outbound"></i>
+                                            <span>1900 303080</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <h4 class="footer-heading">Về digiticket</h4>
+                                <ul class="footer-content_wrap">
+                                    <li>
+                                        <a href="" class="footer-content">Giới thiệu</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="footer-content">Chính sách bảo mật thông tin</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="footer-content">Cơ chế giải quyết tranh chấp</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <h4 class="footer-heading">Chăm sóc khách hàng</h4>
+                                <ul class="footer-content_wrap">
+                                    <li>
+                                        <a href="" class="footer-content">Hướng dẫn đặt hàng</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="footer-content">Hướng dẫn thanh toán</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="footer-content">Chăm sóc khách hàng</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3">
+                                <h4 class="footer-heading">Digi Block</h4>
+                                <ul class="footer-content_wrap">
+                                    <li>
+                                        <a href="" class="footer-content">Block Ẩm thực</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="footer-content">Block Du lịch</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="footer-content">Block Địa Điểm</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-5">
+                                <h4 class="footer-heading">Đăng ký nhận khuyễn mãi</h4>
+
+                                <div class="d-flex footer-form ">
+                                    <input class="col-lg-7 footer-form_input" type="text" placeholder="Nhập email">
+                                    <button class="col-lg-5 footer-form_button" type="submit">Đăng ký</button>
+                                </div>
+                                <div class="footer-text_about">* Đừng bỏ lỡ hàng ngàn sản phẩm và chương trình siêu hấp dẫn sẽ được gửi trực tiếp đến email của bạn</div>
+                                <div class="d-flex footer-social">
+                                    <a href="" class="footer-social-logo">
+                                        <img src="../assets/img/Partner-logo/instagram.jpg" alt="">
+                                    </a>
+                                    <a href="" class="footer-social-logo">
+                                        <img src="../assets/img/Partner-logo/facebook.png" alt="">
+                                    </a>                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row footer-license_wrap">
+                    <span class="footer-license_content">© 2021 - Bản quyền thuộc Team Dev</span>
+                </div>
+            </div>
+        </footer>
+
+        <!--Jquery-->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
+        <script src="./js/lightbox-plus-jquery.min.js"></script>
+        <script src="js/main-order.js"></script>
+        <script>
+            lightbox.option({
+                'resizeDuration': 200,
+                'wrapAround': true,
+                'alwaysShowNavOnTouchDevices': true,
+                'fadeDuration': 0,
+            })
+        </script>
+    </div>
+</body>
+</html>
